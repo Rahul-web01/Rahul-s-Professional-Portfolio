@@ -89,7 +89,7 @@ export const HeroSection: React.FC = () => {
               Also make sure this matches the on-disk filename's case exactly
               (Windows ignores case, but Linux hosts like Vercel/Netlify don't).
             */}
-            <source src="/hero.mp4" type="video/mp4" />
+            <source src="/hero-v2.mp4" type="video/mp4" />
           </video>
         )}
 
