@@ -1,32 +1,41 @@
-# React + TypeScript + Vite
+# Rahul Singh | Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> A sleek, cinematic web portfolio engineered to showcase backend capabilities and professional experience.
 
-Currently, two official plugins are available:
+## 👨‍💻 About This Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the source code for my professional developer portfolio. Designed with a custom cinematic dark theme (`#111111`), it serves as a modern digital hub for my engineering identity. The interface is built to demonstrate precision, offering a stylized gateway for anyone who has a backend system to architect, a software engineering opportunity, or a collaborative inquiry.
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Cinematic Aesthetic:** A highly polished, deep dark-themed UI that puts the focus strictly on content, architecture, and professional branding.
+* **Custom Communications Terminal:** A stylized "INITIALIZE TRANSMISSION" contact system allowing visitors to send direct dispatches via an immersive interface.
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* **Responsive Architecture:** Engineered to perform flawlessly across desktop, tablet, and mobile environments.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 📍 Location
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Based in Lucknow, Uttar Pradesh, India.
+
+## 🔗 Connect With Me
+
+* **Email:** [contact.rahul82@gmail.com](https://www.google.com/search?q=mailto%3Acontact.rahul82%40gmail.com)
+
+* **GitHub:** [github.com/Rahul-web01](https://www.google.com/search?q=https://github.com/Rahul-web01&utm_source=gemini)
+
+* **LinkedIn:** [linkedin.com/in/rahul-singh-cs](https://www.google.com/search?q=https://linkedin.com/in/rahul-singh-cs&utm_source=gemini)
+
+
+---
+
+**How to add this to your project:**
+
+1. In VS Code, click the **New File** icon in your `Rahul's-Professional-Portfolio-main` folder.
+2. Name the file exactly `README.md`.
+3. Copy the entire text above and paste it into the new file.
+4. Save the file (`Ctrl + S`).
+5. Open your terminal and push the update to GitHub by typing these commands one by one:
+* `git add README.md`
+* `git commit -m "Added professional README"`
+* `git push`
