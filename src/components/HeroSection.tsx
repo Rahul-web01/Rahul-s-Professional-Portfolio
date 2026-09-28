@@ -76,16 +76,16 @@ export const HeroSection: React.FC = () => {
             loop
             playsInline
             onError={(e) => {
-            const video = e.currentTarget;
-            console.log('Video error code:', video.error?.code, video.error?.message);
-            setVideoFailed(true);
-           }}
+              const video = e.currentTarget;
+              console.log('Video error code:', video.error?.code, video.error?.message);
+              setVideoFailed(true);
+            }}
             className="h-screen w-auto max-w-none object-contain origin-right scale-95 md:scale-[0.98] lg:scale-100"
           >
             {/*
-              Files inside `public/` are served from the site root, so a file
-              on disk at `public/videos/hero.mp4` is loaded in the browser as
-              `/videos/hero.mp4` — do NOT include the `public/` prefix here.
+              Files inside `public/` are served from the site root, so
+              `public/hero.mp4` on disk is loaded in the browser as
+              `/hero.mp4` — do NOT include the `public/` prefix here.
               Also make sure this matches the on-disk filename's case exactly
               (Windows ignores case, but Linux hosts like Vercel/Netlify don't).
             */}
@@ -240,7 +240,7 @@ export const HeroSection: React.FC = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.02 }}
-                className="relative inline-flex items-center space-x-3 px-6 sm:px-7 py-3.5 border border-[#8C6D4F] bg-[#120F0C]/80 hover:border-[#D4AF37] text-[#EAD8C7] hover:text-[#FFF5EB] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.18)]"
+                className="group relative inline-flex items-center space-x-3 px-6 sm:px-7 py-3.5 border border-[#8C6D4F] bg-[#120F0C]/80 hover:border-[#D4AF37] text-[#EAD8C7] hover:text-[#FFF5EB] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.18)]"
               >
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent pointer-events-none" />
                 <span>EXPLORE MY WORK</span>
@@ -252,12 +252,13 @@ export const HeroSection: React.FC = () => {
               {/* Download Resume Button */}
               <motion.a
                 href="/resume.pdf"
+                download="Rahul_Singh_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.02 }}
-                className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#8C6D4F]/40 hover:border-[#8C6D4F] text-[#BFA895] hover:text-[#EAD8C7] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
+                className="group relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#8C6D4F]/40 hover:border-[#8C6D4F] text-[#BFA895] hover:text-[#EAD8C7] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
               >
                 <span>DOWNLOAD RESUME</span>
                 <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-xs">
