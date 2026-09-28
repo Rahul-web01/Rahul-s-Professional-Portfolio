@@ -24,7 +24,7 @@ Based in Lucknow, Uttar Pradesh, India.
 
 * **GitHub:** [github.com/Rahul-web01](https://www.google.com/search?q=https://github.com/Rahul-web01&utm_source=gemini)
 
-* **LinkedIn:** [linkedin.com/in/rahul-singh-cs](https://www.google.com/search?q=https://linkedin.com/in/rahul-singh-cs&utm_source=gemini)
+* **LinkedIn:** [linkedin.com/in/rahul-singh-cs](https://www.linkedin.com/in/rahul-singh-cs/)
 
 
 ---
