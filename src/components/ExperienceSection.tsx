@@ -8,39 +8,58 @@ interface RouteStop {
   title: string;
   organization: string;
   description: string;
+  link?: { label: string; url: string };
 }
 
 const journey: RouteStop[] = [
   {
     id: '01',
-    year: 'JUL 2026',
-    title: 'MIDAS CORE — KAFKA MICROSERVICE',
-    organization: 'JPMORGAN CHASE SOFTWARE ENGINEERING SIMULATION (FORAGE)',
-    description: 'Built a Spring Boot microservice consuming and deserializing high-volume transaction messages via Apache Kafka, with JPA/H2 persistence and a REST balance-query endpoint.',
+    year: 'JUL–AUG 2026',
+    title: 'JAVA FULL STACK INTERN',
+    organization: 'ADYAPAN',
+    description: 'Built an Employee Management System (CRUD) in a 45-day project using Java, Spring Boot, Spring Data JPA, Hibernate, Thymeleaf and MySQL, with JPA entity relationships, bean validation, global exception handling and a Bootstrap UI.',
+    link: { label: 'Live Demo', url: 'https://employee-management-system-yuzi.onrender.com/' },
   },
   {
     id: '02',
+    year: 'MAY–JUN 2026',
+    title: 'JAVA INTERN',
+    organization: 'ADYAPAN',
+    description: 'Developed a console-based Retail Store and Order Management System in Java covering billing, payments and reports, applying OOP with interfaces, polymorphism, enums, Collections and custom exceptions.',
+  },
+  {
+    id: '03',
+    year: 'JUN 2026',
+    title: 'MIDAS CORE — KAFKA MICROSERVICE',
+    organization: 'JPMORGAN CHASE SOFTWARE ENGINEERING SIMULATION (FORAGE)',
+    description: 'Built a Spring Boot microservice consuming and deserializing high-volume transaction messages via Apache Kafka, with JPA/H2 persistence and a REST balance-query endpoint.',
+    link: { label: 'View on GitHub', url: 'https://github.com/Rahul-web01/midas-core' },
+  },
+  {
+    id: '04',
     year: 'JAN 2026',
     title: 'REAL-TIME CURRENCY EXCHANGE API',
     organization: 'PERSONAL PROJECT',
     description: 'Built a Java backend integrating third-party exchange-rate APIs for real-time multi-currency conversion, with fault-tolerant JSON parsing and retry logic.',
+    link: { label: 'Live Demo', url: 'https://currency-exchange-dackf2w6x-rahuls-projects-98687e81.vercel.app/' },
   },
   {
-    id: '03',
+    id: '05',
     year: 'AUG 2025',
     title: 'SCHOLARSPACE PLATFORM',
     organization: 'PERSONAL PROJECT',
     description: 'Architected a scalable multi-role REST API backend (admin, faculty, student) supporting 500+ concurrent users, with a normalized 3NF MySQL schema and RBAC.',
+    link: { label: 'Live Demo', url: 'https://scholarspace-main.vercel.app/' },
   },
   {
-    id: '04',
+    id: '06',
     year: '2023 - 2027',
     title: 'B.TECH IN COMPUTER SCIENCE & ENGINEERING',
     organization: 'BABU BANARASI DAS UNIVERSITY, LUCKNOW',
     description: 'Building a strong foundation in Data Structures, Algorithms, and Object-Oriented Programming, with hands-on backend engineering across Java, Spring Boot, and SQL.',
   },
   {
-    id: '05',
+    id: '07',
     year: '2017 - 2019',
     title: 'CLASS XII (SCIENCE — PCM)',
     organization: 'LUCKNOW PUBLIC SCHOOL AND COLLEGES, CBSE',
@@ -171,6 +190,17 @@ export const ExperienceSection: React.FC = () => {
                   >
                     {stop.description}
                   </p>
+
+                  {stop.link && (
+                    <a
+                      href={stop.link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-3 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37] hover:text-[#F7E7C4] transition-colors"
+                    >
+                      {stop.link.label} ↗
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}

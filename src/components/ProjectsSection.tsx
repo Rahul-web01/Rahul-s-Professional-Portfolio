@@ -43,6 +43,7 @@ const projects: Project[] = [
     description:
       'Academic resource management platform with a scalable multi-role REST API backend for admins, faculty, and students. Designed a normalized MySQL schema in 3NF and boosted high-frequency query performance by 40%+ through indexing and optimized joins, backed by role-based access control.',
     githubUrl: 'https://github.com/Rahul-web01/Scholarspace-main',
+    liveUrl: 'https://scholarspace-main.vercel.app/',
     tech: [
       'Java',
       'Spring Boot',
@@ -88,6 +89,7 @@ const projects: Project[] = [
     description:
       'Java backend integrating third-party exchange-rate APIs for real-time multi-currency conversion. Implements fault-tolerant JSON parsing with structured exception handling and retry logic for reliable API communication under unstable network conditions.',
     githubUrl: 'https://github.com/Rahul-web01/Currency-Exchange-App',
+    liveUrl: 'https://currency-exchange-dackf2w6x-rahuls-projects-98687e81.vercel.app/',
     tech: [
       'Java',
       'REST API Integration',
