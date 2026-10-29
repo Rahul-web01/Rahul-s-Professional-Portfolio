@@ -8,6 +8,7 @@ interface Project {
   category: string;
   description: string;
   githubUrl: string;
+  liveUrl?: string;
   tech: string[];
   metrics: { label: string; value: string }[];
 }
@@ -58,6 +59,30 @@ const projects: Project[] = [
   },
   {
     number: '03',
+    title: 'Employee Management System',
+    category: 'FULL-STACK / ENTERPRISE CRUD',
+    description:
+      'Full-stack employee record management application built during a 45-day Java Full Stack internship at Adyapan. Models employee data with JPA entities and foreign-key relationships in MySQL, enforces input integrity with bean validation and global exception handling, and serves a Bootstrap interface through Thymeleaf.',
+    // TODO: replace with your Employee Management System repository URL
+    githubUrl: 'https://github.com/Rahul-web01',
+    liveUrl: 'https://employee-management-system-yuzi.onrender.com/',
+    tech: [
+      'Java',
+      'Spring Boot',
+      'Spring Data JPA',
+      'Hibernate',
+      'Thymeleaf',
+      'MySQL',
+      'Bootstrap',
+    ],
+    metrics: [
+      { label: 'BUILD', value: '45-Day Project' },
+      { label: 'PERSISTENCE', value: 'Spring Data JPA / MySQL' },
+      { label: 'RELIABILITY', value: 'Validation + Global Exceptions' },
+    ],
+  },
+  {
+    number: '04',
     title: 'Real-Time Currency Exchange API',
     category: 'BACKEND / API INTEGRATION',
     description:
@@ -240,6 +265,19 @@ export const ProjectsSection: React.FC = () => {
                       <span>VIEW ON GITHUB</span>
                       <span className="text-xs">↗</span>
                     </a>
+
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#D4AF37] bg-transparent hover:bg-[#D4AF37] text-[#F7E7C4] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
+                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                      >
+                        <span>LIVE DEMO</span>
+                        <span className="text-xs">↗</span>
+                      </a>
+                    )}
                   </div>
 
                 </div>
