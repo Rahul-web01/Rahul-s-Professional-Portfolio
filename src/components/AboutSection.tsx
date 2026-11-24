@@ -3,9 +3,9 @@ import { Reveal, Section, SectionHeading } from './ui';
 import portrait from '../assets/about.webp';
 
 const stats = [
-  { value: '40%+', label: 'Query performance boost' },
-  { value: '500+', label: 'Concurrent users served' },
-  { value: '4', label: 'Backend projects shipped' },
+  { value: '5', label: 'Projects shipped' },
+  { value: '750+', label: 'Study files on ScholarSpace' },
+  { value: 'JPMC', label: 'Software engineering simulation' },
   { value: 'SQL', label: 'HackerRank certified (Adv.)' },
 ];
 

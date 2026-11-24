@@ -41,45 +41,45 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'ScholarSpace',
-    category: 'Full-stack / Ed-tech',
-    description:
-      'Academic resource management platform with a scalable multi-role REST API backend for admins, faculty and students. Designed a normalized MySQL schema in 3NF and boosted high-frequency query performance by 40%+ through indexing and optimized joins, backed by role-based access control.',
-    githubUrl: 'https://github.com/Rahul-web01/Scholarspace-main',
-    liveUrl: 'https://scholarspace-main.vercel.app/',
-    tech: ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'RBAC', 'Query optimization'],
-    metrics: [
-      ['Users', '500+ concurrent'],
-      ['Schema', 'Normalized MySQL (3NF)'],
-      ['Performance', '+40% query speed'],
-    ],
-  },
-  {
     title: 'Employee Management System',
-    category: 'Full-stack / Enterprise CRUD',
+    category: 'Full-stack / Secured CRUD',
     description:
-      'Employee record management application built during a 45-day Java Full Stack internship at Adyapan. Models employee data with JPA entities and foreign-key relationships in MySQL, enforces input integrity with bean validation and global exception handling, and serves a Bootstrap UI through Thymeleaf.',
+      'Employee and department management app built during a Java Full Stack internship at Adyapan, with a layered Controller → Service → Repository design. Spring Security login with Admin, HR and Viewer roles, BCrypt passwords, CSRF protection, bean validation and a global exception handler. Tested with JUnit 5, Mockito and MockMvc, and deployed as a Docker image on Render with a TiDB Cloud (MySQL) database.',
     githubUrl: 'https://github.com/Rahul-web01/Employee-Management-System',
     liveUrl: 'https://employee-management-system-yuzi.onrender.com/',
-    tech: ['Java', 'Spring Boot', 'Spring Data JPA', 'Hibernate', 'Thymeleaf', 'MySQL', 'Bootstrap'],
+    tech: ['Java 17', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'Thymeleaf', 'MySQL', 'Docker'],
     metrics: [
-      ['Build', '45-day project'],
-      ['Persistence', 'Spring Data JPA / MySQL'],
-      ['Reliability', 'Validation + global errors'],
+      ['Access control', '3 roles (Admin · HR · Viewer)'],
+      ['Testing', 'JUnit 5 · Mockito · MockMvc'],
+      ['Deployment', 'Docker on Render + TiDB'],
     ],
   },
   {
-    title: 'Real-Time Currency Exchange API',
-    category: 'Backend / API integration',
+    title: 'ScholarSpace',
+    category: 'Search / Ed-tech',
     description:
-      'Java backend integrating third-party exchange-rate APIs for real-time multi-currency conversion. Implements fault-tolerant JSON parsing with structured exception handling and retry logic for reliable API communication under unstable network conditions.',
+      'Free study-material hub for university students: notes, previous-year papers and practice sets organised by college, course and year. Its "Ask Notes" feature is a Python serverless search API with an SQLite FTS5 index and BM25 ranking that searches inside every PDF, Word and PowerPoint file, including OCR\'d handwritten pages. Python tools crawl Google Drive to build the catalogue, and student uploads are moderated.',
+    githubUrl: 'https://github.com/Rahul-web01/Scholarspace-main',
+    liveUrl: 'https://scholarspace-main.vercel.app/',
+    tech: ['Python', 'SQLite FTS5', 'BM25 search', 'JavaScript', 'Google Drive', 'Vercel'],
+    metrics: [
+      ['Library', '750+ files · 90 subjects'],
+      ['Search', 'Full-text, BM25 ranked'],
+      ['Extras', 'SGPA calculator · uploads'],
+    ],
+  },
+  {
+    title: 'Live Currency Converter',
+    category: 'Frontend / API integration',
+    description:
+      'Currency converter for 160+ currencies at live market rates that refresh every 60 seconds, with a 30-day trend chart (percent change, low and high) from ECB data. Cancels stale requests, retries automatically on failure, remembers your last pair, and is built to be accessible with labelled inputs, live-region announcements and reduced-motion support.',
     githubUrl: 'https://github.com/Rahul-web01/Currency-Exchange-App',
     liveUrl: 'https://currency-exchange-dackf2w6x-rahuls-projects-98687e81.vercel.app/',
-    tech: ['Java', 'REST API integration', 'JSON parsing', 'Exception handling'],
+    tech: ['React', 'Vite', 'Tailwind CSS', 'REST APIs', 'SVG charts'],
     metrics: [
-      ['Integration', 'Third-party FX API'],
-      ['Reliability', 'Retry + fault tolerance'],
-      ['Format', 'JSON'],
+      ['Coverage', '160+ currencies'],
+      ['Freshness', 'Live, every 60 s'],
+      ['History', '30-day trend chart'],
     ],
   },
 ];
@@ -88,7 +88,7 @@ export function ProjectsSection() {
   return (
     <Section id="work">
       <SectionHeading eyebrow="02 / Featured work" title="Selected works." accent="Engineered value.">
-        Backend systems I've designed and shipped — from Kafka microservices to multi-role REST platforms.
+        Products I've designed and shipped, from Kafka microservices and secured Spring apps to local-AI automation.
       </SectionHeading>
 
       {/* On large screens the cards stick and stack on top of each other as you scroll (pure CSS). */}

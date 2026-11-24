@@ -23,10 +23,10 @@ const categories = [
   {
     title: 'Data platforms',
     badge: 'Persistence',
-    stat: '+40% query perf',
+    stat: 'SQL certified',
     span: 'lg:col-span-5',
-    items: ['MySQL', 'H2 Database', 'RDBMS', 'Query optimization'],
-    description: 'Designing normalized relational schemas with optimized indexing, boosting high-frequency query performance by 40%+.',
+    items: ['MySQL', 'TiDB Cloud', 'H2', 'SQLite FTS5', 'Indexing'],
+    description: 'Relational schemas with JPA entity relationships, cloud MySQL over TLS, and full-text search indexes with BM25 ranking.',
   },
   {
     title: 'Cloud, DevOps & tooling',
