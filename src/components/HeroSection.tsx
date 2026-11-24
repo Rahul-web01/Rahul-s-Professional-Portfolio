@@ -40,13 +40,13 @@ export function HeroSection() {
           className="mb-5 font-display text-6xl uppercase leading-[0.85] tracking-tight sm:text-7xl md:text-8xl lg:text-[7.5rem]"
         >
           <span className="gradient-silver block">I build</span>
-          <span className="gradient-accent block drop-shadow-[0_8px_25px_rgba(96,165,250,0.3)]">backend</span>
-          <span className="gradient-accent block">systems</span>
+          <span className="gradient-gold block drop-shadow-[0_8px_25px_rgba(201,158,93,0.3)]">backend</span>
+          <span className="gradient-gold block">systems</span>
         </motion.h1>
 
-        <motion.p variants={fadeUp} className="mb-4 text-[11px] uppercase tracking-[0.28em] text-[#a5b4c8] md:text-xs">
-          Software Engineer <span className="mx-1 text-steel">•</span> Spring Boot{' '}
-          <span className="mx-1 text-steel">•</span> Apache Kafka
+        <motion.p variants={fadeUp} className="mb-4 text-[11px] uppercase tracking-[0.28em] text-[#c4b29e] md:text-xs">
+          Software Engineer <span className="mx-1 text-bronze">•</span> Spring Boot{' '}
+          <span className="mx-1 text-bronze">•</span> Apache Kafka
         </motion.p>
 
         <motion.p variants={fadeUp} className="mb-8 max-w-md text-sm font-light leading-[1.8] text-muted">
@@ -71,14 +71,14 @@ export function HeroSection() {
         transition={{ delay: 0.8, duration: 1.2, ease }}
         className="absolute right-[34%] top-1/2 z-10 hidden -translate-y-1/2 select-none xl:block"
       >
-        <span className="mb-2 block font-serif text-xl leading-none text-[#60a5fa]">“</span>
-        <p className="mb-3 space-y-1 text-[10px] font-medium uppercase tracking-[0.24em] text-[#dbe4f0]">
+        <span className="mb-2 block font-serif text-xl leading-none text-[#c99e5d]">“</span>
+        <p className="mb-3 space-y-1 text-[10px] font-medium uppercase tracking-[0.24em] text-[#e0d3c5]">
           Code is my craft.
           <br />
           Scale is my goal.
         </p>
-        <div className="mb-2 h-px w-28 bg-gradient-to-r from-accent to-transparent" />
-        <span className="font-script text-4xl text-[#60a5fa]">Rahul</span>
+        <div className="mb-2 h-px w-28 bg-gradient-to-r from-gold to-transparent" />
+        <span className="font-script text-4xl text-[#d8ab64]">Rahul</span>
       </motion.div>
 
       {/* Floating emblem */}
@@ -87,7 +87,7 @@ export function HeroSection() {
         alt=""
         animate={{ y: [-3, 3, -3] }}
         transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-8 right-6 z-10 w-24 drop-shadow-[0_0_15px_rgba(59,130,246,0.25)] lg:right-12 lg:w-28"
+        className="absolute bottom-8 right-6 z-10 w-24 drop-shadow-[0_0_15px_rgba(212,175,55,0.25)] lg:right-12 lg:w-28"
       />
     </section>
   );

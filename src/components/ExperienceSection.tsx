@@ -60,10 +60,10 @@ export function ExperienceSection() {
         <SectionHeading eyebrow="04 / Experience" title="Experience &" accent="milestones." />
 
         <div ref={ref} className="relative">
-          <div className="absolute bottom-8 left-[19px] top-4 w-px bg-steel/20 md:left-[140px]" />
+          <div className="absolute bottom-8 left-[19px] top-4 w-px bg-bronze/20 md:left-[140px]" />
           <motion.div
             style={{ height }}
-            className="absolute left-[19px] top-4 w-[2px] bg-gradient-to-b from-accent to-steel/10 shadow-[0_0_10px_#3b82f6] md:left-[140px]"
+            className="absolute left-[19px] top-4 w-[2px] bg-gradient-to-b from-gold to-bronze/10 shadow-[0_0_10px_#d4af37] md:left-[140px]"
           />
 
           <div className="space-y-12">
@@ -76,14 +76,14 @@ export function ExperienceSection() {
                 transition={{ duration: 0.7 }}
                 className="group relative flex items-start"
               >
-                <div className="hidden w-[140px] shrink-0 pr-8 pt-0.5 text-right font-mono text-[10px] uppercase tracking-[0.2em] text-steel transition-colors group-hover:text-accent md:block">
+                <div className="hidden w-[140px] shrink-0 pr-8 pt-0.5 text-right font-mono text-[10px] uppercase tracking-[0.2em] text-bronze transition-colors group-hover:text-gold md:block">
                   {s.year}
                 </div>
-                <div className="absolute left-[19px] top-1.5 h-2.5 w-2.5 -translate-x-1/2 rounded-full border border-steel bg-[#0d1526] transition-colors group-hover:border-accent group-hover:bg-accent md:left-[140px]" />
+                <div className="absolute left-[19px] top-1.5 h-2.5 w-2.5 -translate-x-1/2 rounded-full border border-bronze bg-[#120f0c] transition-colors group-hover:border-gold group-hover:bg-gold md:left-[140px]" />
 
                 <div className="ml-14 md:ml-12">
-                  <div className="mb-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-accent md:hidden">{s.year}</div>
-                  <h3 className="mb-1 font-display text-3xl uppercase leading-none tracking-wide text-white transition-colors group-hover:text-frost sm:text-4xl">
+                  <div className="mb-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-gold md:hidden">{s.year}</div>
+                  <h3 className="mb-1 font-display text-3xl uppercase leading-none tracking-wide text-white transition-colors group-hover:text-cream sm:text-4xl">
                     {s.title}
                   </h3>
                   <span className="label mb-2 block font-medium">{s.org}</span>
@@ -93,7 +93,7 @@ export function ExperienceSection() {
                       href={s.link[1]}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-3 inline-block font-mono text-[10px] uppercase tracking-[0.2em] text-accent hover:text-frost"
+                      className="mt-3 inline-block font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-cream"
                     >
                       {s.link[0]} ↗
                     </a>

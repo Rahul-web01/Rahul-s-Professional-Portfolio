@@ -34,7 +34,7 @@ export function ContactSection() {
               Have a backend system to build, an engineering role, or a project to collaborate on? Send a message
               or reach me directly.
             </p>
-            <dl className="space-y-3 border-t border-steel/25 pt-6">
+            <dl className="space-y-3 border-t border-bronze/25 pt-6">
               {channels.map((c) => (
                 <div key={c.label} className="flex items-center justify-between gap-4">
                   <dt className="label shrink-0 font-mono">{c.label}</dt>
@@ -44,7 +44,7 @@ export function ContactSection() {
                         href={c.href}
                         target={c.href.startsWith('http') ? '_blank' : undefined}
                         rel="noopener noreferrer"
-                        className="transition-colors hover:text-accent"
+                        className="transition-colors hover:text-gold"
                       >
                         {c.value}
                       </a>
@@ -58,7 +58,7 @@ export function ContactSection() {
           </div>
 
           <Reveal className="card p-8 shadow-[0_20px_50px_rgba(0,0,0,0.9)] sm:p-10 lg:col-span-7 lg:mt-24">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/70 to-transparent" />
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/70 to-transparent" />
             <form onSubmit={onSubmit} className="space-y-6">
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="block">
@@ -80,7 +80,7 @@ export function ContactSection() {
               {sent && (
                 <p className="text-center text-xs text-muted">
                   Your email app should open with the message ready to send. If it didn't, email me at{' '}
-                  <a href={`mailto:${EMAIL}`} className="text-accent">
+                  <a href={`mailto:${EMAIL}`} className="text-gold">
                     {EMAIL}
                   </a>
                   .
@@ -90,7 +90,7 @@ export function ContactSection() {
           </Reveal>
         </div>
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-steel/15 pt-10 font-mono text-[10px] uppercase tracking-widest text-steel sm:flex-row">
+        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-bronze/15 pt-10 font-mono text-[10px] uppercase tracking-widest text-bronze sm:flex-row">
           <span>Rahul Singh — Software Engineer</span>
           <span>© {new Date().getFullYear()} · Built with React &amp; Tailwind CSS</span>
         </div>

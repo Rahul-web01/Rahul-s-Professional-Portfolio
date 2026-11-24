@@ -53,14 +53,14 @@ export function SkillsSection() {
         {categories.map((c) => (
           <motion.div key={c.title} variants={fadeUp} className={`card p-8 sm:p-9 ${c.span}`}>
             <div className="mb-4 flex items-center justify-between gap-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">{c.badge}</span>
-              <span className="border border-steel/40 bg-[#111a2b] px-2.5 py-0.5 font-mono text-[10px] uppercase text-[#b6c2d4]">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">{c.badge}</span>
+              <span className="border border-bronze/40 bg-[#17130f] px-2.5 py-0.5 font-mono text-[10px] uppercase text-[#c4b5a5]">
                 {c.stat}
               </span>
             </div>
             <h3 className="mb-3 font-display text-3xl uppercase tracking-wide text-white sm:text-4xl">{c.title}</h3>
             <p className="mb-7 max-w-xl text-sm font-light leading-relaxed text-muted">{c.description}</p>
-            <div className="flex flex-wrap gap-2 border-t border-steel/20 pt-4">
+            <div className="flex flex-wrap gap-2 border-t border-bronze/20 pt-4">
               {c.items.map((t) => (
                 <span key={t} className="chip">
                   {t}

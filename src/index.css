@@ -5,12 +5,12 @@
   --font-sans: "Montserrat", sans-serif;
   --font-script: "Herr Von Muellerhoff", cursive;
 
-  --color-accent: #3b82f6;
-  --color-steel: #3b5b8f;
-  --color-sand: #e2e8f0;
-  --color-frost: #dbeafe;
-  --color-muted: #94a3b8;
-  --color-panel: #0b1220;
+  --color-gold: #d4af37;
+  --color-bronze: #8c6d4f;
+  --color-sand: #e8dfd8;
+  --color-cream: #f7e7c4;
+  --color-muted: #a8988b;
+  --color-panel: #0e0c0a;
 }
 
 html {
@@ -27,7 +27,7 @@ body {
 }
 
 ::selection {
-  background: #93c5fd;
+  background: #cbb59d;
   color: #000;
 }
 
@@ -37,13 +37,13 @@ section[id] {
 
 @utility gradient-silver {
   color: transparent;
-  background: linear-gradient(to bottom, #fff, #cbd5e1, #4b5d78);
+  background: linear-gradient(to bottom, #fff, #d5cbc0, #605448);
   background-clip: text;
 }
 
-@utility gradient-accent {
+@utility gradient-gold {
   color: transparent;
-  background: linear-gradient(to bottom, #dbeafe, #60a5fa, #1d4ed8);
+  background: linear-gradient(to bottom, #f7e7c4, #c99e5d, #543b1a);
   background-clip: text;
 }
 
@@ -52,24 +52,24 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-gold);
 }
 
 @utility label {
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-steel);
+  color: var(--color-bronze);
 }
 
 @utility card {
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--color-steel) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 40%, transparent);
   background: var(--color-panel);
   border-radius: 2px;
   transition: border-color 0.4s;
   &:hover {
-    border-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+    border-color: color-mix(in srgb, var(--color-gold) 70%, transparent);
   }
 }
 
@@ -79,9 +79,9 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  border: 1px solid color-mix(in srgb, var(--color-steel) 40%, transparent);
-  background: #101828;
-  color: #dbe4f0;
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 40%, transparent);
+  background: #16120e;
+  color: #e8d7c5;
   border-radius: 2px;
 }
 
@@ -95,29 +95,29 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  border: 1px solid var(--color-steel);
-  color: #dbe4f0;
+  border: 1px solid var(--color-bronze);
+  color: #ead8c7;
   transition: all 0.3s;
   &:hover {
-    border-color: var(--color-accent);
-    color: #eff6ff;
+    border-color: var(--color-gold);
+    color: #fff5eb;
   }
 }
 
 @utility btn-solid {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--color-gold);
+  border-color: var(--color-gold);
   color: #000;
   &:hover {
-    background: var(--color-frost);
+    background: var(--color-cream);
     color: #000;
   }
 }
 
 @utility input {
   width: 100%;
-  background: #0d1526;
-  border: 1px solid color-mix(in srgb, var(--color-steel) 30%, transparent);
+  background: #120f0c;
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 30%, transparent);
   color: #fff;
   font-size: 13px;
   padding: 0.8rem 1rem;
@@ -125,10 +125,10 @@ section[id] {
   border-radius: 2px;
   transition: border-color 0.3s;
   &:focus {
-    border-color: var(--color-accent);
+    border-color: var(--color-gold);
   }
   &::placeholder {
-    color: color-mix(in srgb, var(--color-steel) 60%, transparent);
+    color: color-mix(in srgb, var(--color-bronze) 60%, transparent);
   }
 }
 
