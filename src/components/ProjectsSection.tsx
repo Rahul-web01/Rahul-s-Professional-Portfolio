@@ -6,6 +6,7 @@ interface Project {
   description: string;
   githubUrl: string;
   liveUrl?: string;
+  liveLabel?: string;
   tech: string[];
   metrics: [label: string, value: string][];
 }
@@ -17,6 +18,8 @@ const projects: Project[] = [
     description:
       'Free, private job-search assistant that runs on your own machine. Pulls openings from Greenhouse, Lever and Remotive, scores each one 0–100 against your skills, titles and locations, and uses a local LLM (Ollama) to tailor a resume summary and cover letter as PDFs. Playwright auto-fills real application forms but never submits, and an HR outreach module finds published hiring emails, drafts a note and sends it from your Gmail with follow-up reminders.',
     githubUrl: 'https://github.com/Rahul-web01/job-pilot',
+    liveUrl: 'https://github.com/Rahul-web01/job-pilot#demo',
+    liveLabel: 'See demo',
     tech: ['Java 21', 'Spring Boot', 'H2', 'Thymeleaf', 'Playwright', 'Ollama (local LLM)', 'PDFBox', 'Gmail SMTP'],
     metrics: [
       ['Job sources', 'Greenhouse · Lever · Remotive'],
@@ -133,7 +136,7 @@ export function ProjectsSection() {
                   </a>
                   {p.liveUrl && (
                     <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-solid">
-                      Live demo ↗
+                      {p.liveLabel ?? 'Live demo'} ↗
                     </a>
                   )}
                 </div>
