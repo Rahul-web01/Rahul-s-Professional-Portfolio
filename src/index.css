@@ -1,9 +1,139 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap');
 @import "tailwindcss";
-html, body {
+
+@theme {
+  --font-display: "Bebas Neue", sans-serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Herr Von Muellerhoff", cursive;
+
+  --color-gold: #d4af37;
+  --color-bronze: #8c6d4f;
+  --color-sand: #e8dfd8;
+  --color-cream: #f7e7c4;
+  --color-muted: #a8988b;
+  --color-panel: #0e0c0a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #000;
+}
+
+body {
   margin: 0;
-  padding: 0;
   overflow-x: hidden;
-  background-color: #000;
+  background: #000;
+  color: var(--color-sand);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #cbb59d;
+  color: #000;
+}
+
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+@utility gradient-silver {
+  color: transparent;
+  background: linear-gradient(to bottom, #fff, #d5cbc0, #605448);
+  background-clip: text;
+}
+
+@utility gradient-gold {
+  color: transparent;
+  background: linear-gradient(to bottom, #f7e7c4, #c99e5d, #543b1a);
+  background-clip: text;
+}
+
+@utility eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+@utility label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-bronze);
+}
+
+@utility card {
+  position: relative;
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 40%, transparent);
+  background: var(--color-panel);
+  border-radius: 2px;
+  transition: border-color 0.4s;
+  &:hover {
+    border-color: color-mix(in srgb, var(--color-gold) 70%, transparent);
+  }
+}
+
+@utility chip {
+  padding: 0.35rem 0.8rem;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 40%, transparent);
+  background: #16120e;
+  color: #e8d7c5;
+  border-radius: 2px;
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-bronze);
+  color: #ead8c7;
+  transition: all 0.3s;
+  &:hover {
+    border-color: var(--color-gold);
+    color: #fff5eb;
+  }
+}
+
+@utility btn-solid {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #000;
+  &:hover {
+    background: var(--color-cream);
+    color: #000;
+  }
+}
+
+@utility input {
+  width: 100%;
+  background: #120f0c;
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 30%, transparent);
+  color: #fff;
+  font-size: 13px;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 2px;
+  transition: border-color 0.3s;
+  &:focus {
+    border-color: var(--color-gold);
+  }
+  &::placeholder {
+    color: color-mix(in srgb, var(--color-bronze) 60%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

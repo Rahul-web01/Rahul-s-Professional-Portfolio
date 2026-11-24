@@ -1,41 +1,41 @@
-# Rahul Singh | Software Engineer Portfolio
+# Rahul Singh — Software Engineer Portfolio
 
-> A sleek, cinematic web portfolio engineered to showcase backend capabilities and professional experience.
+A cinematic, dark-themed portfolio showcasing my backend engineering work with Java, Spring Boot and Apache Kafka.
 
-## 👨‍💻 About This Project
+**Live site:** https://rahul-s-professional-portfolio-93kq592qd.vercel.app/
 
-This repository contains the source code for my professional developer portfolio. Designed with a custom cinematic dark theme (`#111111`), it serves as a modern digital hub for my engineering identity. The interface is built to demonstrate precision, offering a stylized gateway for anyone who has a backend system to architect, a software engineering opportunity, or a collaborative inquiry.
+## Tech stack
 
-## ✨ Key Features
+- [React 19](https://react.dev) + TypeScript, bundled with [Vite](https://vite.dev)
+- [Tailwind CSS v4](https://tailwindcss.com) (theme and shared styles in `src/index.css`)
+- [Framer Motion](https://motion.dev) for scroll and entrance animations
 
-* **Cinematic Aesthetic:** A highly polished, deep dark-themed UI that puts the focus strictly on content, architecture, and professional branding.
-* **Custom Communications Terminal:** A stylized "INITIALIZE TRANSMISSION" contact system allowing visitors to send direct dispatches via an immersive interface.
+## Project structure
 
+```
+public/            static files served from the site root (hero video, resume, icons)
+src/
+  assets/          images imported by components
+  components/
+    ui.tsx         shared Section, SectionHeading and Reveal helpers
+    Navbar.tsx     fixed top navigation with mobile menu
+    *Section.tsx   one file per page section
+  index.css        Tailwind theme (fonts, colors) and reusable classes
+```
 
-* **Responsive Architecture:** Engineered to perform flawlessly across desktop, tablet, and mobile environments.
+Content such as projects, skills and experience lives in plain arrays at the top of each section file.
 
-## 📍 Location
+## Run locally
 
-Based in Lucknow, Uttar Pradesh, India.
+```bash
+npm install
+npm run dev
+```
 
-## 🔗 Connect With Me
+Build for production with `npm run build` (output in `dist/`).
 
-* **Email:** [contact.rahul82@gmail.com](https://www.google.com/search?q=mailto%3Acontact.rahul82%40gmail.com)
+## Contact
 
-* **GitHub:** [github.com/Rahul-web01](https://www.google.com/search?q=https://github.com/Rahul-web01&utm_source=gemini)
-
-* **LinkedIn:** [linkedin.com/in/rahul-singh-cs](https://www.linkedin.com/in/rahul-singh-cs/)
-
-
----
-
-**How to add this to your project:**
-
-1. In VS Code, click the **New File** icon in your `Rahul's-Professional-Portfolio-main` folder.
-2. Name the file exactly `README.md`.
-3. Copy the entire text above and paste it into the new file.
-4. Save the file (`Ctrl + S`).
-5. Open your terminal and push the update to GitHub by typing these commands one by one:
-* `git add README.md`
-* `git commit -m "Added professional README"`
-* `git push`
+- Email: [contact.rahul82@gmail.com](mailto:contact.rahul82@gmail.com)
+- GitHub: [github.com/Rahul-web01](https://github.com/Rahul-web01)
+- LinkedIn: [linkedin.com/in/rahul-singh-cs](https://www.linkedin.com/in/rahul-singh-cs/)
