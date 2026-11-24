@@ -20,7 +20,7 @@ export function HeroSection() {
             onError={() => setVideoFailed(true)}
             className="h-full w-auto max-w-none object-contain opacity-70 md:opacity-100"
           >
-            <source src="/hero.mp4" type="video/mp4" />
+            <source src="/hero-walk.mp4" type="video/mp4" />
           </video>
         )}
         <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-black via-black/80 to-transparent md:w-2/3" />

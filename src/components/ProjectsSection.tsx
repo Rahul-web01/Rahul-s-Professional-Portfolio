@@ -12,6 +12,19 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'JobPilot',
+    category: 'Automation / AI job-search assistant',
+    description:
+      'Free, private job-search assistant that runs on your own machine. Pulls openings from Greenhouse, Lever and Remotive, scores each one 0–100 against your skills, titles and locations, and uses a local LLM (Ollama) to tailor a resume summary and cover letter as PDFs. Playwright auto-fills real application forms but never submits, and an HR outreach module finds published hiring emails, drafts a note and sends it from your Gmail with follow-up reminders.',
+    githubUrl: 'https://github.com/Rahul-web01/job-pilot',
+    tech: ['Java 21', 'Spring Boot', 'H2', 'Thymeleaf', 'Playwright', 'Ollama (local LLM)', 'PDFBox', 'Gmail SMTP'],
+    metrics: [
+      ['Job sources', 'Greenhouse · Lever · Remotive'],
+      ['Matching', '0–100 fit score'],
+      ['Privacy', '100% local, no API keys'],
+    ],
+  },
+  {
     title: 'Midas Core',
     category: 'Microservices / Fintech',
     description:
