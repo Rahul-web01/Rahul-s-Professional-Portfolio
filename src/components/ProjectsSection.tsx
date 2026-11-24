@@ -99,21 +99,21 @@ export function ProjectsSection() {
             style={{ top: `calc(6rem + ${i * 1.5}rem)` }}
             className="card group overflow-hidden p-8 shadow-[0_-20px_60px_rgba(0,0,0,0.9)] sm:p-12 lg:sticky"
           >
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/80 to-transparent" />
-            <span className="pointer-events-none absolute -bottom-6 -right-2 select-none font-display text-9xl leading-none text-[#ead8c7]/5">
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/80 to-transparent" />
+            <span className="pointer-events-none absolute -bottom-6 -right-2 select-none font-display text-9xl leading-none text-[#dbe4f0]/5">
               0{i + 1}
             </span>
 
             <div className="relative grid gap-8 lg:grid-cols-12">
               <div className="flex flex-col lg:col-span-7">
                 <p className="mb-4 font-mono text-[10.5px] uppercase tracking-[0.25em] text-muted">
-                  <span className="font-bold text-gold">0{i + 1} //</span> {p.category}
+                  <span className="font-bold text-accent">0{i + 1} //</span> {p.category}
                 </p>
-                <h3 className="mb-4 font-display text-4xl uppercase leading-[0.9] text-white transition-colors group-hover:text-cream sm:text-5xl lg:text-6xl">
+                <h3 className="mb-4 font-display text-4xl uppercase leading-[0.9] text-white transition-colors group-hover:text-frost sm:text-5xl lg:text-6xl">
                   {p.title}
                 </h3>
-                <p className="mb-8 max-w-2xl text-sm font-light leading-[1.85] text-[#bdb0a4]">{p.description}</p>
-                <div className="mt-auto flex flex-wrap gap-2 border-t border-bronze/25 pt-6">
+                <p className="mb-8 max-w-2xl text-sm font-light leading-[1.85] text-[#aab6c6]">{p.description}</p>
+                <div className="mt-auto flex flex-wrap gap-2 border-t border-steel/25 pt-6">
                   {p.tech.map((t) => (
                     <span key={t} className="chip">
                       {t}
@@ -122,12 +122,12 @@ export function ProjectsSection() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-3 lg:col-span-5 lg:border-l lg:border-bronze/25 lg:pl-8">
+              <div className="flex flex-col gap-3 lg:col-span-5 lg:border-l lg:border-steel/25 lg:pl-8">
                 <span className="label mb-1 font-mono">// Key metrics</span>
                 {p.metrics.map(([label, value]) => (
-                  <div key={label} className="flex items-center justify-between gap-4 border border-bronze/25 bg-[#050403] p-3.5 font-mono">
+                  <div key={label} className="flex items-center justify-between gap-4 border border-steel/25 bg-[#04070d] p-3.5 font-mono">
                     <span className="text-[10px] uppercase text-muted">{label}</span>
-                    <span className="text-right text-[11px] font-medium text-cream">{value}</span>
+                    <span className="text-right text-[11px] font-medium text-frost">{value}</span>
                   </div>
                 ))}
                 <div className="mt-auto grid gap-3 pt-4 sm:grid-cols-2 lg:grid-cols-1">
