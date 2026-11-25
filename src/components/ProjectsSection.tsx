@@ -74,7 +74,7 @@ const projects: Project[] = [
     description:
       'Currency converter for 160+ currencies at live market rates that refresh every 60 seconds, with a 30-day trend chart (percent change, low and high) from ECB data. Cancels stale requests, retries automatically on failure, remembers your last pair, and is built to be accessible with labelled inputs, live-region announcements and reduced-motion support.',
     githubUrl: 'https://github.com/Rahul-web01/Currency-Exchange-App',
-    liveUrl: 'https://currency-exchange-dackf2w6x-rahuls-projects-98687e81.vercel.app/',
+    liveUrl: 'https://currency-exchange-app-rahuls-projects-98687e81.vercel.app/',
     tech: ['React', 'Vite', 'Tailwind CSS', 'REST APIs', 'SVG charts'],
     metrics: [
       ['Coverage', '160+ currencies'],
