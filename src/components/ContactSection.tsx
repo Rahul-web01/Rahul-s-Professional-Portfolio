@@ -5,7 +5,6 @@ const EMAIL = 'contact.rahul82@gmail.com';
 
 const channels = [
   { label: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
-  { label: 'Phone', value: '+91 94523 33000', href: 'tel:+919452333000' },
   { label: 'Location', value: 'Lucknow, Uttar Pradesh, India' },
   { label: 'GitHub', value: 'github.com/Rahul-web01', href: 'https://github.com/Rahul-web01' },
   { label: 'LinkedIn', value: 'linkedin.com/in/rahul-singh-cs', href: 'https://linkedin.com/in/rahul-singh-cs' },
